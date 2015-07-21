@@ -247,7 +247,7 @@ function Module:getParameters()
    collectgarbage()
 
    -- return new flat vector that contains all discrete parameters
-   return flatten(tensors)
+   return flatParameters, flatGradParameters
 end
 
 -- Get the params of the module separated by device. Vanilla nn,
